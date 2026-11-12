@@ -20,6 +20,7 @@ import { MemoryDefenseSection } from "@/components/memory-defense-section";
 import { BankStatsView } from "@/components/bank-stats-view";
 import { BankOperationsView } from "@/components/bank-operations-view";
 import { MentalModelsView } from "@/components/mental-models-view";
+import { MemoryTreeView } from "@/components/memory-tree-view";
 import { WebhooksView } from "@/components/webhooks-view";
 import { AuditLogsView } from "@/components/audit-logs-view";
 import { LLMRequestsView } from "@/components/llm-requests-view";
@@ -81,7 +82,7 @@ type NavItem =
   | "pages"
   | "profile";
 type DataSubTab = "world" | "experience" | "observations";
-type PagesTab = "pages" | "models";
+type PagesTab = "pages" | "models" | "tree";
 type BankConfigTab =
   | "general"
   | "memory-defense"
@@ -706,6 +707,7 @@ export default function BankPage() {
                     tabs={[
                       { id: "pages", label: t("pages") },
                       { id: "models", label: t("mentalModels") },
+                      { id: "tree", label: t("memoryTree") },
                     ]}
                   />
 
@@ -720,6 +722,14 @@ export default function BankPage() {
                         {t("mentalModelsDescription")}
                       </p>
                       <MentalModelsView key="mental-models" />
+                    </div>
+                  )}
+                  {pagesTab === "tree" && (
+                    <div>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        {t("memoryTreeDescription")}
+                      </p>
+                      <MemoryTreeView key={bankId ?? "no-bank"} />
                     </div>
                   )}
                 </div>
