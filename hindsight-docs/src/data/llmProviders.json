@@ -20,7 +20,7 @@
   {"id": "requesty",       "label": "Requesty",          "iconKey": "openai-compatible",                                                 "defaultModel": "openai/gpt-4o-mini"},
   {"id": "openai-codex",   "label": "OpenAI Codex",      "iconKey": "openai",              "color": "#000000",  "colorDark": "#FFFFFF",  "defaultModel": "gpt-5.6-luna"},
   {"id": "chatgpt",        "label": "ChatGPT",           "iconKey": "openai",              "color": "#000000",  "colorDark": "#FFFFFF",  "defaultModel": "gpt-6-luna"},
-  {"id": "claude-code",    "label": "Claude Code",       "iconKey": "anthropic",           "color": "#191919",  "colorDark": "#FFFFFF",  "defaultModel": "claude-sonnet-4-5-20250929"},
+  {"id": "claude-code",    "label": "Claude Code",       "iconKey": "anthropic",           "color": "#191919",  "colorDark": "#FFFFFF",  "defaultModel": "claude-sonnet-4-6"},
   {"id": "cursor",         "label": "Cursor",            "iconKey": "terminal",            "color": "#000000",  "colorDark": "#FFFFFF",  "defaultModel": "auto"},
   {"id": "github-copilot", "label": "GitHub Copilot",    "iconKey": "terminal",            "color": "#000000",  "colorDark": "#FFFFFF",  "defaultModel": "gpt-5.6-terra"},
   {"id": "bedrock",        "label": "AWS Bedrock",       "iconKey": "cloud",               "color": "#FF9900",                           "defaultModel": "us.amazon.nova-2-lite-v1:0"},

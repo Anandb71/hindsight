@@ -1290,7 +1290,7 @@ PROVIDER_DEFAULT_MODELS = {
     "vertexai": "google/gemini-3.1-flash-lite",
     "openai-codex": "gpt-5.6-luna",
     "chatgpt": "gpt-6-luna",
-    "claude-code": "claude-sonnet-4-5-20250929",
+    "claude-code": "claude-sonnet-4-6",
     "cursor": "auto",
     "github-copilot": "gpt-5.6-terra",
     "mock": "mock-model",
